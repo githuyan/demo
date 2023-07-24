@@ -1,0 +1,40 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# vscode
+.vscode
+
+# Pyre type checker
+.pyre/
+.idea
+.toml
+.lock
+__pycache__/
+*.log
+.git/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Vim
+*.swp
+*.swo
+
+# custome
+demo*
