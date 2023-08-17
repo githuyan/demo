@@ -6,9 +6,19 @@ authors = ["huyan <2478154897@qq.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.11"
+fastapi = {extras = ["all"], version = "^0.100.0"}
+uvicorn = {extras = ["standard"], version = "^0.23.1"}
 
+[tool.poetry.group.dev.dependencies]
+common_libs = {path = "../common_libs"}
 
-[build-system]
+[build-system]  
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+# 添加镜像源
+[[tool.poetry.source]]
+name = "douban"
+url = "https://pypi.doubanio.com/simple/"
+
